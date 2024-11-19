@@ -166,10 +166,11 @@ nav {
   padding: 10px;
   font-size: 1.8rem;
   font-weight: bold;
-  transition-property: background-color, color;
+  transition-property: background-color, color, border-color;
 }
 
-.nav-right .menu .menu-item:hover .link{
+.nav-right .menu .menu-item:hover .link,
+.nav-right .menu .menu-item .link.highlight{
   color: var(--background-clr);
   background-color: var(--primary-clr);
 }
@@ -181,6 +182,7 @@ nav {
 @media screen and (min-width: 768px){
   .nav-container {
     justify-content: space-between;
+    padding: 20px;
   }
 
   .nav-right .menu {
@@ -195,6 +197,39 @@ nav {
 
   .nav-right .menu .menu-item .link .icon{
     display: none;
+  }
+
+  .nav-right .menu .menu-item .link{
+    display: inline;
+    border-bottom: 1px solid transparent;
+    padding: 0;
+    padding-bottom: 5px;
+    margin-right: 10px;
+  }
+
+  .nav-right .menu .menu-item{
+    margin-right: 15px;
+  }
+
+  .nav-right .menu .menu-item:last-child{
+    margin: 0;
+  }
+
+  .nav-right .menu .menu-item:hover .link,
+  .nav-right .menu .menu-item .link.highlight{
+    border-color: var(--primary-clr);
+    background-color: unset;
+    color: var(--primary-clr);
+  }
+
+  .nav-left .home-link {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .nav-right .menu .menu-item{
+    margin-right: 25px;
   }
 }
 
