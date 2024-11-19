@@ -26,6 +26,11 @@ body {
   color: var(--white-clr);
 }
 
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
 h1,
 h2,
 h3,
@@ -231,6 +236,37 @@ nav {
   .nav-right .menu .menu-item{
     margin-right: 25px;
   }
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--box-background-clr);
+  padding: 20px;
+}
+
+footer .list {
+  display: flex;
+  gap: 20px;
+}
+
+footer .list .list-item .link,
+footer .list .list-item .link:visited{
+  color: white;
+  font-size: 1.3rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+
+  .icon {
+    margin-right: 5px;
+  }
+}
+
+footer .list .list-item:hover .link{
+  border-color: white;
 }
 
 /* Animation */
