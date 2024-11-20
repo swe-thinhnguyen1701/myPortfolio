@@ -1,5 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileArrowDown, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import avatar from "../assets/avatar.jpeg";
@@ -23,15 +24,13 @@ function Home() {
         }
     ];
 
-
-
     return (
         <article>
             <section className="introduction">
                 <div className="introduction-content">
-                    <h2>
+                    <h1>
                         Hello I'm <br /><TypewriterAnimation />
-                    </h2>
+                    </h1>
                     <p>I design and develop innovative digital solutions that prioritize performance, scalability, and user experience. With expertise in both frontend and backend technologies, I transform ideas into powerful, real-world applications that solve complex challenges and drive business growth.</p>
                     <div className="sub-links">
                         <DownloadResume />
