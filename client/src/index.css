@@ -14,6 +14,10 @@
   --text-clr: #a6a5aa;
 }
 
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
@@ -52,6 +56,7 @@ p {
 /* link */
 .link {
   text-decoration: none;
+  outline: none;
 }
 
 /* menu toggle */
@@ -127,6 +132,7 @@ nav {
   background-color: var(--background-clr);
 
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -165,7 +171,7 @@ nav {
 }
 
 .nav-right .menu .menu-item .link,
-.nav-right .menu .menu-item .link:visited{
+.nav-right .menu .menu-item .link:visited {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -178,16 +184,16 @@ nav {
 }
 
 .nav-right .menu .menu-item:hover .link,
-.nav-right .menu .menu-item .link.highlight{
+.nav-right .menu .menu-item .link.highlight {
   color: var(--background-clr);
   background-color: var(--primary-clr);
 }
 
-.nav-right .menu .menu-item .link .icon{
+.nav-right .menu .menu-item .link .icon {
   width: 30px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .nav-container {
     justify-content: space-between;
     padding: 20px;
@@ -203,11 +209,11 @@ nav {
     width: auto;
   }
 
-  .nav-right .menu .menu-item .link .icon{
+  .nav-right .menu .menu-item .link .icon {
     display: none;
   }
 
-  .nav-right .menu .menu-item .link{
+  .nav-right .menu .menu-item .link {
     display: inline;
     border-bottom: 1px solid transparent;
     padding: 0;
@@ -215,16 +221,16 @@ nav {
     margin-right: 10px;
   }
 
-  .nav-right .menu .menu-item{
+  .nav-right .menu .menu-item {
     margin-right: 15px;
   }
 
-  .nav-right .menu .menu-item:last-child{
+  .nav-right .menu .menu-item:last-child {
     margin: 0;
   }
 
   .nav-right .menu .menu-item:hover .link,
-  .nav-right .menu .menu-item .link.highlight{
+  .nav-right .menu .menu-item .link.highlight {
     border-color: var(--primary-clr);
     background-color: unset;
     color: var(--primary-clr);
@@ -235,8 +241,8 @@ nav {
   }
 }
 
-@media screen and (min-width: 1024px){
-  .nav-right .menu .menu-item{
+@media screen and (min-width: 1024px) {
+  .nav-right .menu .menu-item {
     margin-right: 25px;
   }
 }
@@ -257,7 +263,7 @@ footer .list {
 }
 
 footer .list .list-item .link,
-footer .list .list-item .link:visited{
+footer .list .list-item .link:visited {
   color: white;
   font-size: 1.3rem;
   padding-bottom: 2px;
@@ -268,7 +274,7 @@ footer .list .list-item .link:visited{
   }
 }
 
-footer .list .list-item:hover .link{
+footer .list .list-item:hover .link {
   border-color: white;
 }
 
@@ -319,23 +325,23 @@ footer .list .list-item:hover .link{
   font-size: 1.4rem;
 }
 
-.introduction-content .sub-links .list .list-item .link
-,.introduction-content .sub-links .list .list-item .link:visited{
-    color: var(--primary-clr);
-    font-size: 1.4rem;
-    padding: 8px;
-    border: 1px solid var(--primary-clr);
-    border-radius: 50%;
-    transition-property: color, background-color;
+.introduction-content .sub-links .list .list-item .link,
+.introduction-content .sub-links .list .list-item .link:visited {
+  color: var(--primary-clr);
+  font-size: 1.4rem;
+  padding: 8px;
+  border: 1px solid var(--primary-clr);
+  border-radius: 50%;
+  transition-property: color, background-color;
 }
 
-.introduction-content .sub-links .list .list-item:hover .link{
+.introduction-content .sub-links .list .list-item:hover .link {
   color: var(--background-clr);
   background-color: var(--hover-clr);
 }
 
-@media screen and (min-width: 768px){
-  .introduction-content .sub-links{
+@media screen and (min-width: 768px) {
+  .introduction-content .sub-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,15 +353,15 @@ footer .list .list-item:hover .link{
   }
 }
 
-@media screen and (min-width: 1024px){
-  .introduction{
+@media screen and (min-width: 1024px) {
+  .introduction {
     flex-direction: row;
     justify-content: center;
     margin-top: 200px;
     margin-bottom: 100px;
   }
 
-  .introduction-content{
+  .introduction-content {
     width: 50%;
     text-align: left;
   }
@@ -364,11 +370,11 @@ footer .list .list-item:hover .link{
     font-size: 4.5rem;
   }
 
-  .introduction-content .sub-links{
-    justify-content: start; 
+  .introduction-content .sub-links {
+    justify-content: start;
   }
 
-  .introduction-img{
+  .introduction-img {
     width: 300px;
     height: 300px;
     margin-left: 20px;
@@ -392,13 +398,14 @@ footer .list .list-item:hover .link{
   margin-right: 5px;
 }
 
-.download-btn:hover{
+.download-btn:hover {
   color: var(--background-clr);
   background-color: var(--hover-clr);
 }
 
 /* Typewriter Component */
-#cursor, #typewriter {
+#cursor,
+#typewriter {
   color: var(--primary-clr);
 }
 
@@ -411,7 +418,8 @@ footer .list .list-item:hover .link{
 }
 
 .showcase {
-  width: 45%; /* Slightly increased for balance */
+  width: 45%;
+  /* Slightly increased for balance */
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -427,39 +435,141 @@ footer .list .list-item:hover .link{
   text-align: center;
 }
 
-.showcase span:nth-child(2){
+.showcase span:nth-child(2) {
   color: var(--text-clr);
 }
 
-@media screen and (min-width: 375px){
-  .showcase{
+@media screen and (min-width: 375px) {
+  .showcase {
     width: 180px;
   }
 }
 
-@media screen and (min-width: 768px){
-  .showcase-container{
+@media screen and (min-width: 768px) {
+  .showcase-container {
     justify-content: center;
   }
 
-  .showcase{
+  .showcase {
     width: 150px;
     margin-right: 20px;
   }
 
-  .showcase:last-child{
+  .showcase:last-child {
     margin: 0;
   }
 }
 
-@media screen and (min-width: 1024px){
-  .showcase-container{
+@media screen and (min-width: 1024px) {
+  .showcase-container {
     gap: 30px;
   }
-  
-  .showcase .number{
+
+  .showcase .number {
     font-size: 4rem;
   }
+}
+
+/* Contact form componenet */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--box-background-clr);
+  padding: 20px;
+}
+
+.contact-form h2 {
+  font-weight: normal;
+  color: var(--primary-clr);
+  font-size: 3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px 10px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: var(--background-clr);
+  color: var(--white-clr);
+  border-radius: 10px;
+  transition-property: border-color;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--hover-clr);
+}
+
+.submit-btn {
+  background-color: unset;
+  color: var(--primary-clr);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 8px;
+  width: 100px;
+  border: 1px solid var(--primary-clr);
+  border-radius: 10px;
+  transition-property: background-color, color;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--hover-clr);
+  color: var(--background-clr);
+
+}
+/* Contact page */
+.contact .list {
+  margin-top: 30px;
+}
+
+.contact .list .list-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  /* gap: 10px; */
+}
+
+.contact .list .list-item:last-child{
+  margin: 0;
+}
+
+.contact .list .list-item .container {
+  background-color: var(--box-background-clr);
+  color: var(--primary-clr);
+  font-size: 2rem;
+  padding: 15px;
+}
+
+.contact .list .list-item .link {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 65.5vw;
+  color: white;
+}
+
+.contact .list .list-item .link span:first-child{
+  color: grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.contact .list .list-item .link span:last-child{
+  font-size: 1.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact .list .list-item:hover .link span:last-child{
+  text-decoration: underline;
 }
 
 /* Animation */
@@ -468,9 +578,12 @@ footer .list .list-item:hover .link{
 .bar::before,
 .bar::after,
 .nav-right .menu,
-.nav-right .menu .menu-item .link ,
-.download-btn, 
-.introduction-content .sub-links .list .list-item .link{
+.nav-right .menu .menu-item .link,
+.download-btn,
+.introduction-content .sub-links .list .list-item .link,
+.contact-form input,
+.contact-form textarea,
+.submit-btn {
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-function);
 }
