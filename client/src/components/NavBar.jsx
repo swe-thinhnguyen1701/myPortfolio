@@ -34,7 +34,7 @@ function NavBar() {
                     <ul className="list menu">
                         {MENU.map((item, index) => (
                             <li className="menu-item" key={index}>
-                                <Link to={item.link} className="link">
+                                <Link to={item.link} className={currentPage === item.link ? "link highlight" : "link"}>
                                     <FontAwesomeIcon icon={item.icon} className="icon" />
                                     <span>{item.name}</span>
                                 </Link>
