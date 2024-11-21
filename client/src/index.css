@@ -14,7 +14,9 @@
   --text-clr: #a6a5aa;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -162,6 +164,7 @@ nav {
   visibility: hidden;
   opacity: 0;
   transition-property: transform, visibility, opacity;
+  padding-top: 20px;
 }
 
 .nav-right.open .menu {
@@ -207,6 +210,7 @@ nav {
     display: flex;
     height: auto;
     width: auto;
+    padding: 0;
   }
 
   .nav-right .menu .menu-item .link .icon {
@@ -521,21 +525,26 @@ footer .list .list-item:hover .link {
 .submit-btn:hover {
   background-color: var(--hover-clr);
   color: var(--background-clr);
-
 }
+
+.contact-form p {
+  font-size: 1.5rem;
+  color: var(--text-clr);
+}
+
 /* Contact page */
 .contact .list {
   margin-top: 30px;
 }
 
-.contact .list .list-item{
+.contact .list .list-item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   /* gap: 10px; */
 }
 
-.contact .list .list-item:last-child{
+.contact .list .list-item:last-child {
   margin: 0;
 }
 
@@ -544,6 +553,7 @@ footer .list .list-item:hover .link {
   color: var(--primary-clr);
   font-size: 2rem;
   padding: 15px;
+  border-radius: 5px;
 }
 
 .contact .list .list-item .link {
@@ -554,22 +564,48 @@ footer .list .list-item:hover .link {
   color: white;
 }
 
-.contact .list .list-item .link span:first-child{
-  color: grey;
+.contact .list .list-item .link span:first-child {
+  color: var(--text-clr);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-.contact .list .list-item .link span:last-child{
+.contact .list .list-item .link span:last-child {
   font-size: 1.6rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.contact .list .list-item:hover .link span:last-child{
+.contact .list .list-item:hover .link span:last-child {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .contact .list {
+    margin: 0;
+  }
+
+  .contact .list .list-item .link {
+    width: 300px;
+  }
+
+  .contact .list .list-item .container {
+    font-size: 3rem;
+    padding: 15px;
+    width: 70px;
+    text-align: center;
+  }
 }
 
 /* Animation */
