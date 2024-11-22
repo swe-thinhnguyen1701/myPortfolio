@@ -1,16 +1,15 @@
 import { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faUser, faFile, faPhone, faDiagramProject } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faFile, faPhone, faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
     const currentPage = useLocation().pathname;
     const MENU = [
         { name: "Home", link: "/", icon: faHouse },
-        { name: "About me", link: "/about", icon: faUser },
         { name: "Resume", link: "/resume", icon: faFile },
-        { name: "Works", link: "/works", icon: faDiagramProject },
+        { name: "Projects", link: "/projects", icon: faDiagramProject },
         { name: "Contact", link: "/contact", icon: faPhone }
     ];
     const menuHandler = (e) => {
