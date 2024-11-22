@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Skills from "./Skills";
 import AboutMe from "./AboutMe";
 import Education from "./Education";

@@ -647,6 +647,10 @@ footer .list .list-item:hover .link {
   font-weight: bold;
 }
 
+.resume-menu .list .list-item:last-child {
+  display: none;
+}
+
 .resume-menu .list .list-item.highlight,
 .resume-menu .list .list-item:hover {
   color: var(--hover-clr)
@@ -659,7 +663,7 @@ footer .list .list-item:hover .link {
 }
 
 @media screen and (min-width: 1024px) {
-  .resume-menu{
+  .resume-menu {
     margin-top: 10px;
   }
 
@@ -680,6 +684,20 @@ footer .list .list-item:hover .link {
 
   .resume-menu .list .list-item .icon {
     margin-right: 10px;
+  }
+
+  .resume-menu .list .list-item:last-child {
+    display: inherit;
+  }
+
+  .resume-menu .list .list-item:last-child .link {
+    border: unset;
+    color: white;
+  }
+
+  .resume-menu .list .list-item:last-child .link:hover {
+    background-color: unset;
+    color: var(--hover-clr);
   }
 }
 

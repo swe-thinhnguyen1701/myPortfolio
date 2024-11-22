@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faGrip, faGraduationCap, faSuitcase } from "@fortawesome/free-solid-svg-icons";
 import ResumeContent from "../components/ResumeContent";
-import Skills from "../components/Skills";
+import DownloadResume from "../components/DownloadResume";
 
 function Resume() {
     const [selectedItem, setSelectedItem] = useState(0);
@@ -46,6 +46,9 @@ function Resume() {
                             </li>
                         )
                     })}
+                    <li className="list-item">
+                        <DownloadResume />
+                    </li>
                 </ul>
             </section>
             <section>
