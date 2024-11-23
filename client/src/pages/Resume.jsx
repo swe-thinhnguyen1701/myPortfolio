@@ -37,7 +37,7 @@ function Resume() {
     return (
         <article className="resume-page">
             <section className="resume-menu">
-                <div className="container">
+                <div className="hook">
                     <h1>Why hire me?</h1>
                     <p>I don’t just build websites—I craft digital experiences. I ensure your website is not only functional and visually appealing but also engaging and user-friendly. Whether you’re looking to attract more customers, enhance your brand, or provide seamless navigation, I can tailor your website to meet your unique needs.</p>
                 </div>
