@@ -819,6 +819,44 @@ footer .list .list-item:hover .link {
   }
 }
 
+/* experience component */
+.experience h3 {
+  font-size: 2.2rem;
+}
+
+.experience .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-company {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.experience-description {
+  font-size: 1.3rem;
+}
+
+.experience-description li {
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px){
+  .experience-description, .experience .container {
+    font-size: 1.5rem;
+  }
+
+  .experience-company {
+    font-size: 1.9rem;
+  }
+
+  .experience h3 {
+    font-size: 2.3rem;
+  }
+}
+
 /* Animation */
 .menu-toggle,
 .bar,
