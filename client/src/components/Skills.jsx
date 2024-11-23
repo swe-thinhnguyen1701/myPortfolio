@@ -39,10 +39,6 @@ function Skills() {
             icon: faReact
         },
         {
-            name: "Express-js",
-            icon: faNodeJs
-        },
-        {
             name: "Handlebars",
             icon: faNodeJs
         },
@@ -93,8 +89,9 @@ function Skills() {
     ];
     return (
         <>
+            <h2>SKILLS</h2>
             <div className="skills-container">
-                <h2>Programming Languages</h2>
+                <h3>Programming Languages</h3>
                 <ul className="list">
                     {LANGUAGES.map((language, index) => {
                         return (
@@ -107,7 +104,7 @@ function Skills() {
                 </ul>
             </div>
             <div className="skills-container">
-                <h2>Frontend</h2>
+                <h3>Frontend</h3>
                 <ul className="list">
                     {FONTEND.map((frontend, index) => {
                         return (
@@ -120,7 +117,7 @@ function Skills() {
                 </ul>
             </div>
             <div className="skills-container">
-                <h2>Backend</h2>
+                <h3>Backend</h3>
                 <ul className="list">
                     {BACKEND.map((backend, index) => {
                         return (
@@ -133,7 +130,7 @@ function Skills() {
                 </ul>
             </div>
             <div className="skills-container">
-                <h2>Databases</h2>
+                <h3>Databases</h3>
                 <ul className="list">
                     {DATABASES.map((database, index) => {
                         return (
