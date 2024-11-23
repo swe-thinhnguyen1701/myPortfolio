@@ -613,9 +613,19 @@ footer .list .list-item:hover .link {
   margin-top: 20px;
 }
 
+.resume-page section:last-child h2 {
+  font-size: 3rem;
+  color: var(--primary-clr);
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .resume-page {
     margin-top: 40px;
+  }
+
+  .resume-page section:last-child{
+    padding: 0 20px;
   }
 }
 
@@ -649,6 +659,7 @@ footer .list .list-item:hover .link {
 
 .resume-menu .list .list-item:last-child {
   display: none;
+  margin: 0;
 }
 
 .resume-menu .list .list-item.highlight,
@@ -693,6 +704,8 @@ footer .list .list-item:hover .link {
   .resume-menu .list .list-item:last-child .link {
     border: unset;
     color: white;
+    font-size: 1.7rem;
+    padding: 0;
   }
 
   .resume-menu .list .list-item:last-child .link:hover {
@@ -707,7 +720,7 @@ footer .list .list-item:hover .link {
   padding: 0 20px;
 }
 
-.skills-container h2 {
+.skills-container h3 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -757,6 +770,52 @@ footer .list .list-item:hover .link {
 
   .skills-container .list .list-item .icon {
     font-size: 2.5rem;
+  }
+}
+
+/* education component */
+.education{
+  margin-bottom: 20px;
+}
+
+.education h3 {
+  font-size: 2.1rem;
+}
+
+.education-degree {
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+.education-program {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.education ul {
+  margin-top: 0;
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 768px){
+  .education p {
+    font-size: 1.4rem;
+  }
+
+  .education-degree {
+    font-size: 1.7rem;
+  }
+
+  .education-program {
+    font-size: 1.9rem;
+  }
+
+  .education h3 {
+    font-size: 2.3rem;
+  }
+
+  .education{
+    margin-bottom: 40px;
   }
 }
 
