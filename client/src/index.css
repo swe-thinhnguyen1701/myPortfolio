@@ -879,6 +879,50 @@ footer .list .list-item:hover .link {
   }
 }
 
+/* loader component */
+.loader {
+  /* width: 20rem; */
+  font-weight: bolder;
+  position: absolute;
+  inset: 0;
+}
+
+.loader text {
+  font-size: 5rem;
+  stroke-width: 2;
+  letter-spacing: -4px;
+}
+
+.loader text.text-body {
+  stroke: var(--primary-clr);
+  animation: 3s 1 alternate animate-stroke;
+}
+
+@keyframes animate-stroke {
+  0% {
+    fill: transparent;
+    stroke: var(--primary-clr);
+    stroke-width: 3;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 32%;
+  }
+
+  50% {
+    fill: transparent;
+    stroke: var(--primary-clr);
+    stroke-width: 3;
+  }
+
+  80%,
+  100% {
+    fill: var(--primary-clr);
+    stroke: transparent;
+    stroke-width: 0;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 32% 0;
+  }
+}
+
 /* Animation */
 .menu-toggle,
 .bar,
