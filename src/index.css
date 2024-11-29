@@ -925,7 +925,7 @@ footer .list .list-item:hover .link {
 }
 
 /* name container */
-.switcher .list .list-item{
+.switcher .list .list-item {
   width: 30px;
   display: flex;
   border: 1px solid transparent;
@@ -968,10 +968,115 @@ footer .list .list-item:hover .link {
   margin-bottom: 5px;
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1300px) {
   .about-me {
     font-size: 1.6rem;
   }
+}
+
+/* work component */
+.work-img {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.work-img img {
+  width: 100%;
+}
+
+.work-info h2 {
+  font-size: 3rem;
+}
+
+.work-info p {
+  color: var(--text-clr);
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.work-info .technologies {
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.work-info .technologies .list-item {
+  margin-right: 10px;
+}
+
+.work-info .technologies .list-item:last-child {
+  margin: 0;
+}
+
+.work-info .work-links {
+  display: flex;
+  gap: 10px;
+}
+
+.work-info .work-links .list-item{
+  margin-right: 15px;
+}
+
+.work-info .work-links .list-item .link,
+.work-info .work-links .list-item .link:visited {
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.work-info .work-links .list-item .link:hover {
+  color: var(--primary-clr);
+}
+
+.work-info .work-links .list-item .link .icon {
+  font-size: 2rem;
+}
+
+.work {
+  background-color: var(--box-background-clr);
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 768px){
+  .work {
+    padding: 20px;
+  }
+
+  .work-img {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .work {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .work-img {
+    width: 48.82vw;
+    max-width: 700px;
+  }
+}
+
+/* badge component */
+.badge {
+  cursor: default;
+  display: inline-flex;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition-property: color, background-color;
+}
+
+.badge:hover {
+  color: var(--background-clr);
+  background-color: var(--hover-clr);
 }
 
 /* Animation */
@@ -987,7 +1092,8 @@ footer .list .list-item:hover .link {
 .contact-form textarea,
 .submit-btn,
 .skills-container .list .list-item,
-.switcher .list .list-item {
+.switcher .list .list-item,
+.badge {
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-function);
 }
