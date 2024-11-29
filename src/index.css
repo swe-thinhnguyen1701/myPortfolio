@@ -259,6 +259,7 @@ footer {
   gap: 20px;
   background-color: var(--box-background-clr);
   padding: 20px;
+  margin-top: 40px;
 }
 
 footer .list {
@@ -923,6 +924,56 @@ footer .list .list-item:hover .link {
   }
 }
 
+/* name container */
+.switcher .list .list-item{
+  width: 30px;
+  display: flex;
+  border: 1px solid transparent;
+  padding: 3px 5px;
+  border-radius: 3px;
+  transition-property: border-color;
+}
+
+.switcher .list .list-item.selected {
+  border-color: var(--primary-clr);
+}
+
+.switcher .list .list-item img {
+  width: 100%;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.name {
+  padding-left: 10px;
+  width: 260px;
+}
+
+.name h1 {
+  font-size: 3.4rem;
+}
+
+.name span {
+  color: var(--text-clr);
+  font-size: 1.8rem;
+}
+
+.about-me {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1300px){
+  .about-me {
+    font-size: 1.6rem;
+  }
+}
+
 /* Animation */
 .menu-toggle,
 .bar,
@@ -935,7 +986,8 @@ footer .list .list-item:hover .link {
 .contact-form input,
 .contact-form textarea,
 .submit-btn,
-.skills-container .list .list-item {
+.skills-container .list .list-item,
+.switcher .list .list-item {
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-function);
 }
