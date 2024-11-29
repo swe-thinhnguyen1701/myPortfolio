@@ -259,6 +259,7 @@ footer {
   gap: 20px;
   background-color: var(--box-background-clr);
   padding: 20px;
+  margin-top: 40px;
 }
 
 footer .list {
