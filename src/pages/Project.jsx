@@ -10,13 +10,10 @@ function Project () {
             image: projectImg1,
             github: "https://github.com/swe-thinhnguyen1701/to-do-list",
             link: "https://unrivaled-sprinkles-0690f9.netlify.app/",
-            technologies: ["React", "JS", "React", "JS", "React", "JS", "React", "JS", "React", "JS", "React", "JS"]
-        }
+            technologies: ["React", "JS"]
+        },
     ]
     return (
-        // <div className="projects" style={{ paddingTop: "100px" }}>
-        //     <h1>This page is coming soon</h1>
-        // </div>
         <>
             {PROJECTS.map((project, index) => (
                 <Work key={index} project={project} />

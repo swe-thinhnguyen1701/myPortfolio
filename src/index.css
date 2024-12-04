@@ -975,6 +975,10 @@ footer .list .list-item:hover .link {
 }
 
 /* work component */
+.work {
+  margin-top: 20px;
+}
+
 .work-img {
   width: 100%;
   border-radius: 5px;
@@ -987,6 +991,7 @@ footer .list .list-item:hover .link {
 
 .work-info h2 {
   font-size: 3rem;
+  color: var(--primary-clr);
 }
 
 .work-info p {
@@ -1039,15 +1044,12 @@ footer .list .list-item:hover .link {
 .work {
   background-color: var(--box-background-clr);
   padding: 10px 0;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px){
   .work {
     padding: 20px;
-  }
-
-  .work-img {
-    border-radius: 10px;
   }
 }
 
