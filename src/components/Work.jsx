@@ -30,9 +30,9 @@ function Work({ project }) {
                         </a>
                     </li>
                     <li className="list-item">
-                        <a className="link" href={project.link} target="_blank" rel="noreferrer">
+                        <a className={`link ${!project.link ? "isDisable" : ""}`} href= {project.link ? project.link : "#"} target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" />
-                            <span> Live Demo</span>
+                            <span> {project.link ? "Live demo" : "In Progress"}</span>
                         </a>
                     </li>
                 </ul>
@@ -47,7 +47,7 @@ Work.propTypes = {
         description: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
         github: PropTypes.string.isRequired,
-        link: PropTypes.string.isRequired,
+        link: PropTypes.string,
         technologies: PropTypes.arrayOf(PropTypes.string).isRequired
     })
 }
