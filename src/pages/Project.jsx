@@ -1,6 +1,8 @@
 import projectImg1 from "../assets/project-img1.webp";
 import projectImg2 from "../assets/project-img2.webp";
-// import inProgressImg from "../assets/in-progress.webp";
+import tealicious from "../assets/tealicious.webp";
+import weaversJobs from "../assets/weavers-job.webp";
+import inProgressImg from "../assets/in-progress.webp";
 
 import Work from "../components/Work";
 
@@ -21,6 +23,23 @@ function Project () {
             github: "https://github.com/swe-thinhnguyen1701/to-do-list",
             link: "https://unrivaled-sprinkles-0690f9.netlify.app/",
             technologies: ["React", "JS", "CSS"]
+        },
+        {
+            title: "TeaLicious",
+            description: "Tealicious is an e-commerce website offers users the ability to browse and purchase a wide variety of teas with ease. Whether you're a casual guest or a registered member, you'll enjoy a seamless and interactive shopping experience powered by modern web technologies.",
+            image: tealicious,
+            github: "https://github.com/swe-thinhnguyen1701/TeaLicious",
+            link: "https://tealicious.onrender.com/",
+            technologies: ["React", "JS", "CSS", "AWS S3", "MongoDB", "Node.js", "Stripe", "GraphQL", "Apollo"]
+
+        },
+        {
+            title: "Weavers Jobs",
+            description: "Weavers Jobs is a web application that allows users to search for jobs and apply for positions. It features a dynamic interface to display all available jobs and provides filtering options by location for a personalized user experience.",
+            image: weaversJobs,
+            github: "https://github.com/swe-thinhnguyen1701/job-board",
+            link: "https://web-weavers-job-site.onrender.com/",
+            technologies: ["Handlebars", "PostgreSQL", "Node.js", "Express", "Multer", "CSS", "JS", "HTML"]
         }
     ]
     return (
