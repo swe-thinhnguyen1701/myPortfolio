@@ -43,7 +43,7 @@ function Skills() {
             icon: faNodeJs
         },
         {
-            name: "Appolo Client",
+            name: "Apollo Client",
             icon: faCode
         }
     ];
