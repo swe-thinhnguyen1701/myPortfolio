@@ -4,7 +4,7 @@ import Name from "./Name";
 function AboutMe() {
     return (
         <>
-            <h2>About Me</h2>
+            <h2>ABOUT ME</h2>
             <Name />
             <p className="about-me">
                 I'm a passionate and driven full-stack developer with a strong foundation in both front-end and back-end development. I graduated from the Full-Stack Development Bootcamp at UC Berkeley, where I honed my skills in technologies like React, Node.js, MongoDB, PostgreSQL, and more.
