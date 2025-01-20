@@ -9,6 +9,14 @@ import Work from "../components/Work";
 function Project () {
     const PROJECTS = [
         {
+            title: "To-Do List 2.0",
+            description: "An enhanced to-do list application with an improved UX/UI design, offering various features to help users manage their daily tasks effectively. Users can easily add, remove, and modify tasks. The app includes intuitive buttons to streamline task management while adding or editing tasks. Additionally, if the task body is cleared during editing and the 'SAVE' button is pressed, the task will be automatically removed.",
+            image: inProgressImg,
+            github: "https://github.com/swe-thinhnguyen1701/todo-list-v2",
+            link: null,
+            technologies: ["React", "TypeScript", "Chakra", "uuid"]
+        },
+        {
             title: "Game Hub",
             description: "This project is a web application that fetches game data from the RAWG API, allowing users to explore and discover games. It features a dynamic interface to display all available games and provides filtering options by genre for a personalized user experience.",
             image: projectImg2,
