@@ -13,7 +13,7 @@ function Project () {
             description: "An enhanced to-do list application with an improved UX/UI design, offering various features to help users manage their daily tasks effectively. Users can easily add, remove, and modify tasks. The app includes intuitive buttons to streamline task management while adding or editing tasks. Additionally, if the task body is cleared during editing and the 'SAVE' button is pressed, the task will be automatically removed.",
             image: inProgressImg,
             github: "https://github.com/swe-thinhnguyen1701/todo-list-v2",
-            link: null,
+            link: "https://curious-salamander-acf966.netlify.app/",
             technologies: ["React", "TypeScript", "Chakra", "uuid"]
         },
         {
