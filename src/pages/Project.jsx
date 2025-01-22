@@ -2,6 +2,7 @@ import projectImg1 from "../assets/project-img1.webp";
 import projectImg2 from "../assets/project-img2.webp";
 import tealicious from "../assets/tealicious.webp";
 import weaversJobs from "../assets/weavers-job.webp";
+import toDoListV2 from "../assets/todo-list-v2.webp";
 import inProgressImg from "../assets/in-progress.webp";
 
 import Work from "../components/Work";
@@ -11,9 +12,9 @@ function Project () {
         {
             title: "To-Do List 2.0",
             description: "An enhanced to-do list application with an improved UX/UI design, offering various features to help users manage their daily tasks effectively. Users can easily add, remove, and modify tasks. The app includes intuitive buttons to streamline task management while adding or editing tasks. Additionally, if the task body is cleared during editing and the 'SAVE' button is pressed, the task will be automatically removed.",
-            image: inProgressImg,
+            image: toDoListV2,
             github: "https://github.com/swe-thinhnguyen1701/todo-list-v2",
-            link: null,
+            link: "https://curious-salamander-acf966.netlify.app/",
             technologies: ["React", "TypeScript", "Chakra", "uuid"]
         },
         {
