@@ -10,6 +10,14 @@ import Work from "../components/Work";
 function Project () {
     const PROJECTS = [
         {
+            title: "Living Expense Tracker",
+            description: "In progress...",
+            image: inProgressImg,
+            github: "https://github.com/swe-thinhnguyen1701/living-expense",
+            link: null,
+            technologies: ["React", "TypeScript", "Chakra", "Apollo", "GraphQL", "Node.js", "Express", "MongoDB"]
+        },
+        {
             title: "To-Do List 2.0",
             description: "An enhanced to-do list application with an improved UX/UI design, offering various features to help users manage their daily tasks effectively. Users can easily add, remove, and modify tasks. The app includes intuitive buttons to streamline task management while adding or editing tasks. Additionally, if the task body is cleared during editing and the 'SAVE' button is pressed, the task will be automatically removed.",
             image: toDoListV2,
