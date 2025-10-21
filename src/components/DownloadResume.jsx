@@ -4,7 +4,7 @@ import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function DownloadResume() {
     return (
-        <Link to="/CHARLES_Resume_Web.pdf" target="_blank" download className="link download-btn">
+        <Link to="/THINH_NGUYEN_WEB.pdf" target="_blank" download className="link download-btn">
             <FontAwesomeIcon icon={faFileArrowDown} className="icon" />
             <span>Download Resume</span>
         </Link>

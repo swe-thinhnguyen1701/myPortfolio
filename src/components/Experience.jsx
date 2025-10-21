@@ -1,6 +1,16 @@
 function Experience () {
     const EXPERIENCES = [
         {
+            position: "Test Technician",
+            company: "FoxConn",
+            time: "July 2025 - Present",
+            description: [
+                "Collaborate with engineering teams to investigate component failure using Python scripts and Linux command-line tools, identifying root causes efficiently.",
+                "Develop and maintain Python automation scripts to improve testing quality and reduce test cycle time, helping the team finish projects ahead of schedule and quickly resolve failures.",
+                "Partner with cross-functional teams to analyze results, discuss solutions, and implement corrective actions for process optimization."
+            ]
+        },
+        {
             position: "Backend Developer Internship",
             company: "Chosn App",
             time: "May 2023 - Aug 2023",
