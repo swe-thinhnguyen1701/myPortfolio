@@ -10,11 +10,11 @@ import Work from "../components/Work";
 function Project () {
     const PROJECTS = [
         {
-            title: "Living Expense Tracker",
+            title: "Call of Dragons Wiki",
             description: "In progress...",
             image: inProgressImg,
-            github: "https://github.com/swe-thinhnguyen1701/living-expense",
-            link: null,
+            github: "https://github.com/swe-thinhnguyen1701/cod-v2",
+            link: "https://callofdragonswiki.com/",
             technologies: ["React", "TypeScript", "Chakra", "Apollo", "GraphQL", "Node.js", "Express", "MongoDB"]
         },
         {
